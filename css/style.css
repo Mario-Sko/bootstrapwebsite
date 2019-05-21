@@ -1,0 +1,552 @@
+/**
+ *  1. Fonts and Links
+ *  2. Layout
+ *  3. Navigation 
+ *  4. Carousel
+ *  5. Footer 
+ *  6. General Box
+ *  7. Page: Film Overview Page
+ *  8. Page: Film Detail Page
+ *  9. Pages: Frist Day, Second Day, Third Day and Fourth Day
+ * 10. Page: News
+ * 11. Page: Ticket
+ * 12. Page: Location
+ * 13. Page: About
+ * 14. Page: Contact
+ * 15. Responsive Layout
+ * ----------------------------------------------------------------------------
+ */
+
+/**
+ * 1. Fonts and Links
+ * ----------------------------------------------------------------------------
+ */
+ 
+p, li, a, button, address, label, th, td {	
+	font-family: 'Merienda', cursive;
+	font-size: 1.3em;
+}
+
+h1{	
+	font-family: 'Monoton', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #e85a4f;
+	text-align: center;
+}
+
+h2{
+	font-size: 1.8em;
+	font-family: 'Merienda', cursive;
+}
+
+th, button{
+	font-size: 1.5em !important;
+}
+
+a{
+	transition: all 1.3s ease;
+}
+
+a:hover {
+	color: red;
+	outline: 0;
+}
+
+a:link { 
+	text-decoration: none;
+	color: #e98074;	
+}
+	
+a:visited { 
+	text-decoration: none;
+	color: #e98074;
+ }
+ 
+a:active { 
+	text-decoration: none; 
+	color: #e98074;
+}
+
+a:hover { 
+	text-decoration: none;
+	color: #e85a4f;
+}
+
+.otherLinkColor{
+	color: #d8c3a5 !important;
+}
+
+.otherLinkColor:hover{
+	color: #bfa682 !important;
+}
+
+.colorText {
+	color: #333;
+}
+
+/* text line height in the left grid annoucement like the film detail pages or the index/main page */
+.lineheight {
+	line-height: 3em;
+}
+
+.ButtonTextLineheight {
+	line-height: 1.5em;
+}
+
+.h2taller{
+	font-size: 2.5em;
+}
+
+/**
+ * 2. Layout
+ * ----------------------------------------------------------------------------
+ */
+ 
+body {	
+ background-color: #d1cdc7;
+	color: #333;
+	padding-top: 60px;
+}
+
+.mainDesign01 {
+	 background-color: white;
+	 height: 100vh;
+}
+
+.mainDesign {
+	 width: 90%;
+	 background-color: #EAE7DC;
+	 margin: 0% 5%;
+	 padding-bottom: 2%;
+}
+
+/**
+ * 3. Navigation
+ * ----------------------------------------------------------------------------
+ */
+
+a.activeNavLink:hover{
+	background-color: #d9796f !important;
+}
+
+a.activeNavLink:visited{
+	background-color: #d9796f !important;
+}
+
+a.activeNavLink:active{
+	background-color: #d9796f !important;
+}
+
+a.activeNavLink:focus{
+	background-color: #d9796f !important;
+}
+
+a.unactiveNavLink:hover{
+	background-color: #c6ae8b !important;
+}
+
+a.unactiveNavLink:visited{
+	background-color: #c6ae8b !important;
+}
+
+a.unactiveNavLink:active{
+	background-color: #c6ae8b !important;
+}
+
+a.unactiveNavLink:focus{
+	background-color: #c6ae8b !important;
+}
+
+.navdesign{
+	background-color: #e3dacc;
+	padding: 5px;
+}
+
+.activeNavLink {
+	background-color: #e98074;
+	box-shadow: 0 0 0 1px #e58c82 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 1px 0 0 #b46c65, 0 1px 0 1px rgba(97,51,46,0.4), 0 1px 1px 1px rgba(65,35,32,0.5);	
+}
+
+.unactiveNavLink{
+	box-shadow: 0 0 0 1px #d9cbb8 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 1px 0 0 #d5ad75, 0 1px 0 1px rgba(88,74,54,0.4), 0 1px 1px 1px rgba(59,50,37,0.5);
+	background-color: #d8c3a5 !important; 
+	white-space: normal;
+}
+
+.subNavDesignBackground{
+	background-color: #e3dacc;
+}
+
+.subNavDesign{
+	width: 100%;
+}
+
+#brandname{
+	color: #8e8d8a;
+	letter-spacing: 0.2em;
+	word-spacing: 0.3em;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: bold;
+	background-color: #e3dacc;
+	font-family: 'Monoton', cursive;
+	word-wrap: break-word;
+}
+
+/**
+ * 4. Carousel
+ * ----------------------------------------------------------------------------
+ */
+
+.carousellayout {	
+	width: 60%;
+}
+
+#carouselDistance {
+	margin-top: 3%;
+}
+
+/**
+ * 5. Footer
+ * ----------------------------------------------------------------------------
+ */
+
+.addressDesign{
+	padding: 10px;
+	text-align: center;
+}
+
+.footerDesign{	
+	background-color: #e3dacc;
+	min-height: 100px;
+	width: 100%;
+	display: inline;
+}
+
+.socialMediaDesign {
+	padding-top: 3%;
+	text-align: center;	
+}
+
+.socialMediaButton{
+	background-color: white;
+	box-shadow:  0 0 2px #777 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 1px 0 0 #333, 0 1px 0 1px rgba(125,125,125,0.4), 0 1px 1px 1px rgba(77,77,77,0.5);
+	border-width: 1px;
+	border-style: solid;
+	border-color: #333;
+	color: black !important;
+	font-size: 30px;
+	text-align:center;
+	margin: 1%;
+}
+
+/**
+ * 6. General Box
+ * ----------------------------------------------------------------------------
+ */
+
+.btn {
+	color: #333;
+}
+
+.buttonPosition{
+	padding-right: 1%;
+	padding-left: 1%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.dateDesign{
+	border-style: double;
+	border-color: #8e8d8a;
+	border-width: 3px;
+	word-break: break-all;
+	line-height: 1.5;
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}
+
+.linkDesignGrey{
+	box-shadow:  0 0 2px #777 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 1px 0 0 #333, 0 1px 0 1px rgba(77,77,77,0.4), 0 1px 1px 1px rgba(1,1,1,1.5);
+	background-color: #8e8d8a !important;
+	transition: all 1.3s ease;
+}
+
+.eventbox {
+	color: #d8c3a5;
+	padding-left: 0%;
+	padding-right: 0%;
+	line-height: 1.5;	
+}
+
+.boxDistance {	
+	margin-top: 5%;
+}
+
+/**
+ * 7. Page: Film Overview Page
+ * ----------------------------------------------------------------------------
+ */
+
+.GridLayout{
+	padding: auto;
+	margin-bottom: 1%;
+}
+
+.grid-container {
+	background-color: #d8c3a5;
+	padding-bottom: 3%;
+	margin: 2%;
+	color: #333;
+	font-size: 1.4em;
+	text-align: center;
+	-moz-box-shadow: 1px 4px 6px rgba(0, 0, 0,0.5);
+	-webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
+	box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);	
+}	
+
+.grid-container >  img {
+	width: 100%;
+	height: 100%;
+	margin: 5% auto ;
+}
+
+.grid-container :hover {
+	-webkit-animation-name: hovertransparent;
+	-webkit-animation-duration: 0.8s;
+	animation-name: hovertransparent;
+	animation-duration: 0.8s;	
+	opacity: 0.7;	
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hovertransparent {
+	from {opacity: 1.0;}
+    to {opacity: 0.7;}
+}
+
+
+@keyframes hovertransparent {
+    from {opacity: 1.0;}
+    to {opacity: 0.7;}
+}
+
+/**
+ * 8. Page: Film Detail Page
+ * ----------------------------------------------------------------------------
+ */
+
+.breadcrumbDesign{
+	background-color: #EAE7DC;		
+}
+
+.activeBreadcrumb {
+	color: #e85a4f !important;
+}
+
+.breadcrumb > li + li:before {
+    color: #e98074;
+    content: "/ ";
+    padding: 0 5px;
+}
+
+.contentDesign{
+	width: 90%;
+}
+
+.tableDesign{
+	width: 90%;
+}
+
+.trDesign tr:nth-child(odd){
+	background-color: #e3dacc !important;
+}
+
+/**
+ * 9. Pages: Frist Day, Second Day, Third Day and Fourth Day
+ * ----------------------------------------------------------------------------
+ */
+
+.dayImg {	
+	max-width: 100%;
+}
+
+.buttonCenter{
+	text-align: center;
+}
+
+/**
+ * 10. Page: News
+ * ----------------------------------------------------------------------------
+ */
+
+.newsDesign {
+	background-color:  #e3dacc;
+	padding-bottom: 2%;
+	padding-top: 1%;	
+}
+
+.newsCollapseDesign{
+	width: 100%;
+	font-size: bold;
+	background-color: #8e8d8a;
+	box-shadow: 0 0 0 1px #d9cbb8 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 1px 0 0 #d5ad75, 0 1px 0 1px rgba(88,74,54,0.4), 0 1px 1px 1px rgba(59,50,37,0.5); 	
+	margin-top: 5px;
+	color: #d8c3a5;
+	white-space: normal;
+}
+
+.newsCollapseDesign :hover {
+	color: black;
+}
+
+.newsOpenDesign{
+	width: 100%;
+	padding-left: 2%;
+	padding-right: 2%;	
+}
+
+/**
+ * 11. Page: Ticket
+ * ----------------------------------------------------------------------------
+ */
+
+.tableRowDesign  th, .tableRowDesign  td  {	
+	padding-right: 20px;
+	padding-bottom: 5%;
+}
+
+.tableRowDesign  th:nth-child(1), .tableRowDesign  td:nth-child(1) {
+	width: 100px;
+	text-align: center;
+}
+
+.tableRowDesign  th:nth-child(2) {
+	 text-align: center;
+}
+
+.tableRowDesign  > td   input[type=number] {
+    width: 70px; 
+	text-align: center;
+	margin: auto;
+	height: 1.9em ;
+	padding: 3px;
+}
+
+.ticketGridDesign {
+	margin-bottom: 2%;	
+}
+
+.bottonTicketDesign {	
+	margin-top: 8%;
+}
+
+.ticketLabelDesign {
+	margin-top: 5%;
+}
+
+/**
+ * 12. Page: Location
+ * ----------------------------------------------------------------------------
+ */
+
+.aboutDesign{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+/**
+ * 13. Page: About
+ * ----------------------------------------------------------------------------
+ */
+
+.aboutTextGrid {
+	margin-bottom: 4%;	
+}
+
+.lineBottom {
+	padding-bottom: 1.5em;	
+}
+
+#googleIframe {
+	
+	width:100%;
+}
+
+/**
+ * 14. Page: Contact
+ * ----------------------------------------------------------------------------
+ */
+
+.contactbutton{	
+	background-color: #e98074;
+	color: #777;
+	border-color: #b46c65;
+	box-shadow: 0 0 0 1px #e58c82 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 1px 0 0 #b46c65, 0 1px 0 1px rgba(97,51,46,0.4), 0 1px 1px 1px rgba(65,35,32,0.5);
+	font-size: 1.4em;
+}
+
+.contactbutton:hover{
+	background-color: #d9796f;
+	color: #777;
+	transition: all 1.3s ease;
+}
+
+.contactbutton:visited{
+	background-color: #d9796f !important;
+	color: #777 !important;
+	border-color: #8e504a !important;
+}
+
+.contactbutton:active{
+	background-color: #b46c65 !important;
+	color: #777 !important;
+	border-color: #8e504a !important;
+}
+
+.contactbutton:focus{
+	background-color: #d9796f !important;
+	color: #777 !important;
+	border-color: #8e504a !important;
+}
+
+.form-control:focus {
+	border-color: #8e8d8a;
+	box-shadow: inset 0 1px 1px rgba(142, 141, 138, 0.075), 0 0 8px rgba(142, 141, 138, 0.6);
+}
+
+
+/**
+ * 15. Responsive Layout
+ * ----------------------------------------------------------------------------
+ */
+
+@media only screen and (max-width: 992px) {
+
+.GridDisplayResponsiveCenter{
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width:15%;
+}
+
+.tableDisplayResonsiveCenter {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.carousellayout{	
+	width: 80%;
+}
+
+}
